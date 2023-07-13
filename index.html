@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link href="../inspect/inspect.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspect Page</title>
+    <style>
+      nav{
+    background-color: aqua;
+    justify-content:center;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+    align-items: center;
+}
+nav li{
+    display: inline-block;
+    margin: 2px 40px ;
+    
+}
+nav li a{
+    text-decoration-color: rgb(255,255,255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    color:black !important;
+
+}
+footer{
+    background-color:aqua;
+    text-align: center;
+    padding : 10px 50px ;
+    margin-bottom: 0%;
+    justify-content: center;
+}
+footer p{
+    margin:2px 40px;
+    padding: 0%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div style="text-align: center;">
+      <h1 style="color: cadetblue;">Inspect Me</h1>
+      <h2>Put ur little content over hea</h2>
+      <p>Option u can put are the </p>
+      <P>Eshan Koirala</P>
+      <P></P>
+    </div>
+<hr>
+<div class="quiz">
+    <div class="question">
+        Q1. who is talented in making gf?
+    </div>
+    <div class="answer">
+        <input type="text" id="answer1">
+        <button onclick="checkAnswer1()">Submit</button>
+        <p id="result1"></p>
+    </div>
+    <div class="question">
+        Q2. where is Asish GF?
+    </div>
+    <div class="answer">
+        <input type="text" id="answer2"> 
+        <button onclick="checkAnswer2()" type="submit">Submit</button>
+        <p id="result2"></p>
+    </div>
+    <div class="question">
+       Q3. What is the font weight of the h2?
+    </div>
+    <div class="answer">
+      <input id="answer3" type="text">
+      <button type="submit" onclick="checkAnswer3()">Submit</button>
+      <p id="result3"></p>
+    </div>
+</div>
+
+<script>
+// function checkAnswer1() {
+//     var answer = document.getElementById("answer1").value;
+//     if (answer.toLowerCase() === "aliceblue" || answer.toLowerCase() === "alice blue") {
+//       document.getElementById("result1").innerHTML = "Correct!";
+//     } else {
+//       document.getElementById("result1").innerHTML = "Incorrect. Try again.";
+//     }
+//   }
+  function checkAnswer1(){
+    var answer = document.getElementById('answer1').value;
+    if (answer.length===0){
+      document.getElementById("result1").innerHTML = "Empty!";
+    }else if(answer.toLowerCase()==="eshan" || answer.toLowerCase()==="eshan koirala") {
+      document.getElementById("result1").innerHTML = "Correct!";
+    }else{
+      document.getElementById("result1").innerHTML = "Incorrect. Try again.";
+    }
+  }
+  function checkAnswer2() {
+    var answer = document.getElementById("answer2").value;
+    if (answer.toLowerCase() ==="canada"){
+      document.getElementById("result2").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result2").innerHTML = "Incorrect. Try again.";
+    }
+  }
+  function checkAnswer3() {
+    var answer = document.getElementById("answer3").value;
+    if (answer.toLowerCase() === "500") {
+      document.getElementById("result3").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result3").innerHTML = "Incorrect. Try again.";
+    }
+  }
+  function checkAnswer4() {
+    var answer = document.getElementById("answer4").value;
+    if (answer.toLowerCase() === "arial" || answer.toLowerCase() === "arial, sans-serif" || answer.toLowerCase() === "sans-serif" || answer.toLowerCase() === "sans serif") {
+      document.getElementById("result4").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result4").innerHTML = "Incorrect. Try again.";
+    }
+  }
+</script>
+   
+<footer>
+    <p>@copyright Dhaurali</p>
+</footer>
+</body>
+</html>
